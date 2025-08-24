@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macnoton</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="leader-line.min.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+<div class="form-container">
+    <div class="form-group">
+        <label class="form-label" for="processors-num">Processors</label>
+        <div class="form-input-wrapper">
+            <input type="number" id="processors-num" class="form-input with-icon" min="1" max="10"
+                title="Number of processors" placeholder="Enter number" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="tasks-length">Task Length</label>
+        <div class="form-input-wrapper">
+            <input type="number" id="tasks-length" class="form-input with-icon" min="1" max="1000" title="Task length"
+                placeholder="Enter length" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="form-label" for="tasks-num">Tasks Count</label>
+        <div class="form-input-wrapper">
+            <input type="number" id="tasks-num" class="form-input with-icon" min="1" max="100" title="Number of tasks"
+                placeholder="Enter count" required>
+        </div>
+    </div>
+
+    <button type="submit" class="form-btn">
+        <span>Generate</span>
+        <span style="margin-left: 8px;">🚀</span>
+    </button>
+</div>
+<svg class="connections" id="connections"></svg>
+</body>
+
+</html>
